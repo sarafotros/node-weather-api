@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
 
-    <title>Document</title>
+       <title>Weather Forecast</title>
+
 </head>
 <body>
     <nav><a href="weather">Forecast</a></nav>
-    <h2>index inside...</h2>
-    <form action="index" method='POST'>
+    <h2>Choose a City and Enter its country code</h2>
+    <h1>{{msg}}</h1>
+    <form action="/" method='POST'>
         <input type="text" placeholder="Enter City" name='theCity'>
         <input type="text" placeholder="Enter Country code" name='theCountry'>
         <button type="submit">Submit</button>
     </form>
-    <h3> Description: {{weatherDisc}}</h3>
-    <h2>temp: {{tempC}} ºC</h2>
+<h2 style="text-transform: uppercase;">{{cityName}}</h2>
+     <h3> Description: {{weatherDisc}}</h3>
+     <h2>temp: {{tempC}} ºC</h2>
+        {{!-- <% if (user) { %>
+         <h2><%= user.name %></h2>
+        <% } %> --}}
+
     <img src={{srcLogo}} alt='logo'/>
 </body>
 </html>
