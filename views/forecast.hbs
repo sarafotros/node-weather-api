@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <nav><a href="/">City weather</a></nav>
+    <nav><a href="weather">Forecast</a></nav>
+
+    <h1>8-day Forecast</h1>
+  <ul>
+      {{#each  dataArray}}
+    <li>
+        {{!-- <span>{{this.dt}}</span> --}}
+        <p>{{this.temp.day}}</p>
+        <p>{{this.weather}}</p>
+        {{!-- <img src='http://openweathermap.org/img/wn/'+{{this.weather[0].icon}} +'@2x.png' alt="logo"> --}}
+
+       
+   </li>
+  {{/each}}
+  </ul>
+
+</body>
+</html>

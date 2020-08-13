@@ -10,6 +10,7 @@
 </head>
 <body>
     <nav><a href="weather">Forecast</a></nav>
+    <nav><a href="forecast">London 7 Days</a></nav>
     <h2>Choose a City and Enter its country code</h2>
     <h1>{{msg}}</h1>
     <form action="/" method='POST'>
@@ -20,9 +21,6 @@
 <h2 style="text-transform: uppercase;">{{cityName}}</h2>
      <h3> Description: {{weatherDisc}}</h3>
      <h2>temp: {{tempC}} ºC</h2>
-        {{!-- <% if (user) { %>
-         <h2><%= user.name %></h2>
-        <% } %> --}}
 
     <img src={{srcLogo}} alt='logo'/>
 </body>
