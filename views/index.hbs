@@ -20,9 +20,7 @@
 <div class="app">
     <img src="/images/weather-app.png" alt="bdg">
     <h2>Choose a City and Enter its country code</h2>
-    {{#if msg}}
-      <h1>{{msg}}</h1>
-    {{/if}}
+    
     <form action="/" method='POST'>
         <input type="text" placeholder="Enter City" name='theCity'>
         <input type="text" placeholder="Enter Country code" name='theCountry'>
@@ -36,6 +34,10 @@
       <img  src={{srcLogo}} alt='logo' class="img-fluid" alt="Responsive image">
     </div>
   {{/if}}
+  {{#if msg}}
+      <h1>{{msg}}</h1>
+      <img src={{srcLogo}} alt="logo">
+    {{/if}}
  </div>
 </body>
 </html>
