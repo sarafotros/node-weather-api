@@ -2,8 +2,7 @@ body {
   background-color: rgb(181, 237, 254);
   height: 100vh;
   width: 100%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode';
+  font-family: 'Audiowide', cursive;
   padding: 30px;
   margin-top: 30px;
 }
@@ -22,14 +21,30 @@ input {
     border-radius: 5px;
     padding-left: 16px;
     border: none;
+    font-family: 'Audiowide', cursive;
   }
   button {
     width: 80px;
     height: 40px;
     border-radius: 5px;
     border: none;
-
+    font-family: 'Audiowide', cursive;
   }
 .heading{
     text-align: center;
-}  
+} 
+.img-div{
+    height: 120px;
+    background-color: rgb(237, 236, 236);
+    border-radius: 60%;
+} 
+img{
+    height: 100%;
+}
+.lnd-img{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
