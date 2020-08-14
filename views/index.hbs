@@ -9,19 +9,25 @@
 
 </head>
 <body>
-    <nav><a href="weather">Forecast</a></nav>
-    <nav><a href="forecast">London 7 Days</a></nav>
+    <nav>
+      <a href="forecast">London 7 Days</a>
+    </nav>
+<div class="app">
     <h2>Choose a City and Enter its country code</h2>
-    <h1>{{msg}}</h1>
+    {{#if msg}}
+      <h1>{{msg}}</h1>
+    {{/if}}
     <form action="/" method='POST'>
         <input type="text" placeholder="Enter City" name='theCity'>
         <input type="text" placeholder="Enter Country code" name='theCountry'>
         <button type="submit">Submit</button>
     </form>
-<h2 style="text-transform: uppercase;">{{cityName}}</h2>
-     <h3> Description: {{weatherDisc}}</h3>
-     <h2>temp: {{tempC}} ºC</h2>
-
+   {{#if tempC}}
+    <h2 >Current Weather in <span style="text-transform: uppercase;"> {{cityName}}</span> </h2>
+     <h2>Temperature: {{tempC}} ºC</h2>
+     <h3> Description: <span style="text-transform: uppercase;">{{weatherDisc}}</span> </h3>
     <img src={{srcLogo}} alt='logo'/>
+  {{/if}}
+ </div>
 </body>
 </html>
